@@ -1,10 +1,11 @@
 from pyhonbdd.shared.data.region import Region
+from pyhonbdd.shared.data.school import School
 from pyhonbdd.shared.data.tavern import Tavern
 from pyhonbdd.shared.iview import IView
 from pyhonbdd.shared.imodel import IModel
-from pyhonbdd.view.screen.regionview import RegionsView
+from pyhonbdd.view.screen.regionsview import RegionsView
+from pyhonbdd.view.screen.schoolsview import SchoolsView
 from pyhonbdd.view.screen.tavernsview import TavernsView
-
 
 
 class View(IView):
@@ -36,3 +37,6 @@ class View(IView):
 
     def displayRegions(self, region: [Region]):
         RegionsView(region).display()
+
+    def displaySchools(self, school: [School]):
+        SchoolsView(school).display()

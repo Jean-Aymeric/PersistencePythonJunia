@@ -28,5 +28,8 @@ class Model(IModel):
         elif entityName == "region":
             from pyhonbdd.shared.data.region import Region
             return Region.jsonToData(jsonData)
+        elif entityName == "ecole":
+            from pyhonbdd.shared.data.school import School
+            return School.jsonToData(jsonData)
         else:
             raise Exception("Unknown entity name")

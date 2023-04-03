@@ -11,8 +11,9 @@ class Controller(IController):
             view.controller = self
 
     def start(self):
-        self.view.displayTaverns(self.__model.getAllData("auberge"))
-        self.view.displayRegions(self.__model.getAllData("region"))
+        # self.view.displayTaverns(self.__model.getAllData("auberge"))
+        # self.view.displayRegions(self.__model.getAllData("region"))
+        self.view.displaySchools(self.__model.getAllData("ecole"))
 
     @property
     def view(self) -> IView:
