@@ -25,5 +25,8 @@ class Model(IModel):
         if entityName == "auberge":
             from pyhonbdd.shared.data.tavern import Tavern
             return Tavern.jsonToData(jsonData)
+        elif entityName == "region":
+            from pyhonbdd.shared.data.region import Region
+            return Region.jsonToData(jsonData)
         else:
             raise Exception("Unknown entity name")

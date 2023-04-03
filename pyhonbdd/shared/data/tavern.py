@@ -1,7 +1,5 @@
 from __future__ import annotations
-
 from typing import Any
-
 from pyhonbdd.shared.data.data import Data
 
 

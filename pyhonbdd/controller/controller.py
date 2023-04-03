@@ -12,6 +12,7 @@ class Controller(IController):
 
     def start(self):
         self.view.displayTaverns(self.__model.getAllData("auberge"))
+        self.view.displayRegions(self.__model.getAllData("region"))
 
     @property
     def view(self) -> IView:

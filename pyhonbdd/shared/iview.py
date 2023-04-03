@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+from pyhonbdd.shared.data.region import Region
 from pyhonbdd.shared.data.tavern import Tavern
 from pyhonbdd.shared.imodel import IModel
 
@@ -27,4 +28,8 @@ class IView(metaclass=ABCMeta):
 
     @abstractmethod
     def displayTaverns(self, tavern: [Tavern]):
+        pass
+
+    @abstractmethod
+    def displayRegions(self, region: [Region]):
         pass
