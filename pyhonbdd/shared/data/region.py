@@ -3,7 +3,7 @@ from typing import Any
 from pyhonbdd.shared.data.data import Data
 
 
-class Region(Data):
+class Map(Data):
     def __init__(self, idData: int, name: str):
         super().__init__(idData)
         self.__name = name
@@ -12,9 +12,13 @@ class Region(Data):
     def name(self):
         return self.__name
 
-    @name.setter
-    def name(self, name: str):
-        self.__name = name
+    @property
+    def width(self):
+        return self.__width
+
+    @property
+    def height(self):
+        return self.__height
 
     @staticmethod
     def jsonToData(jsonData: dict[str, Any]) -> Region:

@@ -11,3 +11,7 @@ class IModel(metaclass=ABCMeta):
     @abstractmethod
     def getAllData(self, entityName: str) -> [Data]:
         pass
+
+    @abstractmethod
+    def getAllData(self, entityName: str) -> [Data]:
+        pass
