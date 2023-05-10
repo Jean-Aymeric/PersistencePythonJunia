@@ -3,7 +3,7 @@ from typing import Any
 from pyhonbdd.shared.data.data import Data
 
 
-class Map(Data):
+class Region(Data):
     def __init__(self, idData: int, name: str):
         super().__init__(idData)
         self.__name = name
